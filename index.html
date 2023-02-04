@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;900&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Open Sans';
+        }
+
+        .container-fluid {
+            background-color: #f3f5fa;
+        }
+
+        .c1 {
+            margin-top: 50px;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+            .text h3 {
+                font-weight: 900;
+                text-transform: uppercase;
+                color: #37517e;
+            }
+
+            .text p {
+                font-size: 16px;
+            }
+
+        .name {
+            color: #37517e;
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        .c2 {
+            //border:1px solid black;
+        }
+
+        .r1 {
+            height: 230px;
+            //border: 3px solid red;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between; /* creates the gutter space */
+        }
+
+            .r1 .col-md-6 {
+                height: 100%;
+                display: flex;
+                width: 45%; /* needed to create gutter between 2 divs, by default they are 50%*/
+                padding: 10px 25px;
+                //border: 1px solid black;
+                box-shadow: 0px 2px 9px 1px #000;
+            }
+
+
+
+                .r1 .col-md-6 img {
+                    height: 150px;
+                    width: 150px;
+                    border-radius: 50%;
+                }
+
+        .test-wrapper {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icons {
+            display: flex;
+            //border:1px solid black;
+            width: 150px;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3px;
+            //border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            //background-color: #eff2f8;
+            background-color: lightblue;
+        }
+
+            .icon i {
+                color: #37517e;
+            }
+
+        .test-details {
+            padding-left: 10px;
+        }
+
+        @media only screen and (max-width:500px) {
+            .container {
+                width: 500px;
+            }
+
+            .c1 {
+                margin-bottom: 50px;
+            }
+
+            .r1 {
+                flex-direction: column;
+                width: 500px;
+                margin: 0px;
+                //border: 1px solid green;
+                height: auto;
+            }
+
+                .r1 .test-wrapper {
+                    width: 500px;
+                    margin: 4px 0px;
+                    //border:10px solid green;
+                }
+
+                .r1 .col-md-6 {
+                    box-shadow: none;
+                    border: 1px solid black;
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container c1">
+            <div class="row text">
+                <h3>Team</h3>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+        </div>
+        <div class="container c2">
+            <div class="row r1">
+                <div class="col-md-6 test-wrapper" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="test-image" >
+                        <img src="team-1.jpg" />
+                    </div>
+                    <div class="test-details" >
+                        <p class="name">Walter White</p>
+                        <p class="desg">Chief Executive Officer</p>
+                        <p class="desc">Explicabo voluptatem mollitia et repellat qui dolorum quasi. Explicabo voluptatem mollitia et repellat qui dolorum quasi.</p>
+                        <div class="icons">
+                            <div class="icon"><i class="fa fa-twitter"></i></div>
+                            <div class="icon"><i class="fa fa-facebook"></i></div>
+                            <div class="icon"><i class="fa fa-instagram"></i></div>
+                            <div class="icon"><i class="fa fa-linkedin-square"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 test-wrapper" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="test-image">
+                        <img src="team-2.jpg" />
+                    </div>
+                    <div class="test-details">
+                        <p class="name">Walter White</p>
+                        <p>Chief Executive Officer</p>
+                        <p class="desc">Explicabo voluptatem mollitia et repellat qui dolorum quasi. Explicabo voluptatem mollitia et repellat qui dolorum quasi.</p>
+                        <div class="icons">
+                            <div class="icon"><i class="fa fa-twitter"></i></div>
+                            <div class="icon"><i class="fa fa-facebook"></i></div>
+                            <div class="icon"><i class="fa fa-instagram"></i></div>
+                            <div class="icon"><i class="fa fa-linkedin-square"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container c2">
+            <div class="row r1">
+                <div class="col-md-6 test-wrapper" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="test-image">
+                        <img src="team-3.jpg" />
+                    </div>
+                    <div class="test-details">
+                        <p class="name">Walter White</p>
+                        <p class="desg">Chief Executive Officer</p>
+                        <p class="desc">Explicabo voluptatem mollitia et repellat qui dolorum quasi. Explicabo voluptatem mollitia et repellat qui dolorum quasi.</p>
+                        <div class="icons">
+                            <div class="icon"><i class="fa fa-twitter"></i></div>
+                            <div class="icon"><i class="fa fa-facebook"></i></div>
+                            <div class="icon"><i class="fa fa-instagram"></i></div>
+                            <div class="icon"><i class="fa fa-linkedin-square"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 test-wrapper" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="test-image">
+                        <img src="team-4.jpg" />
+                    </div>
+                    <div class="test-details">
+                        <p class="name">Walter White</p>
+                        <p>Chief Executive Officer</p>
+                        <p class="desc">Explicabo voluptatem mollitia et repellat qui dolorum quasi. Explicabo voluptatem mollitia et repellat qui dolorum quasi.</p>
+                        <div class="icons">
+                            <div class="icon"><i class="fa fa-twitter"></i></div>
+                            <div class="icon"><i class="fa fa-facebook"></i></div>
+                            <div class="icon"><i class="fa fa-instagram"></i></div>
+                            <div class="icon"><i class="fa fa-linkedin-square"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
